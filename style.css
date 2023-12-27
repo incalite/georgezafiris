@@ -1,0 +1,90 @@
+/*
+bage: #f0be6f
+dark green: #1b4543
+light green: #b3d0c6
+*/
+@import url(https://fonts.googleapis.com/css?family=Victor+Mono:500);
+
+
+* {
+    font-family: 'Victor Mono', monospace;
+    margin: 0;
+    padding: 0;
+    text-justify: justify !important;
+    color: #1b4543;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height: 900px;
+    margin: 1em auto;
+    box-shadow: 0 2px 5px #1b4543;
+}
+
+.container aside {
+    background: #1b4543;
+    padding: 1em;
+    flex: 1;
+}
+
+.container main {
+    background: #fefffe;
+    padding: 1em;
+    flex: 8;
+}
+
+main article p {
+    font-weight: 400;
+    padding-top: 1em;
+}
+
+aside a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    padding: 0.2em;
+    transition: background 1s;
+}
+
+aside a:hover {
+    background: #b3d0c6;
+    color: #1b4543;
+}
+
+
+
+ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1b4543;
+    font-weight: 600;
+
+}
+
+article#bx-projects {
+    overflow: auto;
+    height: 100%;
+}
+
+
+header,footer {
+    display: flex;
+    text-align: center;
+    margin-bottom: 1em;
+}
+header a, footer a {
+    flex: 1;
+    padding: .5em;
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        box-shadow: none;
+        flex-direction: column;
+    }
+}
